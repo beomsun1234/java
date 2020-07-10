@@ -1,0 +1,6 @@
+<launch>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rplidar_ros)/rviz/rplidar.rviz" />
+    <node name="imu_odm" pkg="ros_controls"  type="imu_odm.py" output="screen"/>
+    <node name="make_path" pkg="ros_controls"  type="make_path.py" output="screen"/>
+</launch>
+
